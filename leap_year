@@ -1,0 +1,21 @@
+# def leap_year(year):
+#     return (year%4==0 and year % 100 != 0) or  (year  % 400 == 0)
+#
+# print(leap_year(2004))
+# print(leap_year(2100))
+# print(leap_year(2400))
+def leap_year_test():
+    n=int(input("Enter the year you want to test: "))
+    if n%4==0:
+        if n%100==0:
+            if n%400==0:
+                print("This is a leap year")
+            else:
+                print("This is not a leap year")
+        else:
+            print(n,'is a leap year')
+    else:
+      print("Not a leap year")
+
+leap_year_test()
+
